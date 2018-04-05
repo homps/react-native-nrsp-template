@@ -20,7 +20,7 @@ class HomeScreen extends React.Component {
                 color="darkorange"
                 />
             ),
-            headerRight: <Button onPress={() => params.incrementCount} title="+1" color="darkorange" />
+            headerRight: <Button onPress={() => params.incrementCount()} title="+1" color="darkorange" />
         };
     };
 
