@@ -10,12 +10,12 @@ This doesn't use redux for the navigation store, it allows React-Navigation to u
 - Clone This Repo: `git clone https://github.com/homps/react-native-nrsp-template.git`
 - From the repo folder
   - `npm install`
-  - (optionally) rename the app by replacing all instances of `NRSPTemplate` in app.json, index.js and package.json
+  - (optionally) rename the app by replacing all text instances of `NRSPTemplate` in app.json, index.js and package.json
   - `react-native upgrade`
   - `react-native link react-native-fetch-blob`
 - You should be ready to go! Launch with `react-native run-android` or `react-native run-ios`
 
-# React-Native Version
+## React-Native Version
 At the time of writing, this has been tested with the most recent major version, 0.54.
 [Check for a later version](https://facebook.github.io/react-native/versions.html)
 
