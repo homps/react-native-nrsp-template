@@ -19,7 +19,7 @@ const MainStack = StackNavigator(
       initialRouteName: 'Home',
       navigationOptions: {
         headerStyle: {
-          backgroundColor: 'orange',
+          backgroundColor: '#F8C471',
         },
         headerTintColor: '#fff',
         headerTitleStyle: {
