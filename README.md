@@ -16,7 +16,7 @@ This doesn't use redux for the navigation store, it allows React-Navigation to u
 - You should be ready to go! Launch with `react-native run-android` or `react-native run-ios`
 
 ## React-Native Version
-At the time of writing, this has been tested with the most recent major version, 0.54.
+At the time of writing, this has been tested with the most recent major version, 0.55.
 [Check for a later version](https://facebook.github.io/react-native/versions.html)
 
 ## Need a hand / have a suggestion?
