@@ -13,9 +13,14 @@
     ],
     "rules": {
         "react-native/no-unused-styles": 2,
-        "react/prop-types": ["error", { "ignore": ["navigation", "navigationOptions", "screenProps"] }]
+        "react/prop-types": ["error", { "ignore": ["navigation", "navigationOptions", "screenProps", "dispatch"] }]
     },
-    "ecmaFeatures": {
-        "jsx": true
-      }
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "modules": true,
+            "jsx": true
+        }
+    }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import { View, Text } from 'react-native';
 
 import { store, persistor } from './config/store';
 import { Provider } from 'react-redux';
@@ -12,11 +12,18 @@ import RootContainer from './routes/route';
 class App extends React.Component {
   render() {
     return (
-        <Provider store={store}>
-          <PersistGate loading={<View><Text>loading...</Text></View>} persistor={persistor}>
-            <RootContainer/>
-          </PersistGate>
-        </Provider>
+      <Provider store={store}>
+        <PersistGate
+          loading={
+            <View>
+              <Text>loading...</Text>
+            </View>
+          }
+          persistor={persistor}
+        >
+          <RootContainer />
+        </PersistGate>
+      </Provider>
     );
   }
 }

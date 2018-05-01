@@ -7,45 +7,45 @@ import ModalScreen from '../screens/modal';
 import DetailsScreen from '../screens/detail';
 
 const MainStack = StackNavigator(
-    {
-      Home: {
-        screen: ConnectedHomeScreen,
-      },
-      Details: {
-        screen: DetailsScreen,
-      },
+  {
+    Home: {
+      screen: ConnectedHomeScreen
     },
-    {
-      initialRouteName: 'Home',
-      navigationOptions: {
-        headerStyle: {
-          backgroundColor: '#F8C471',
-        },
-        headerTintColor: '#fff',
-        headerTitleStyle: {
-          fontWeight: 'bold',
-        },
-      },
+    Details: {
+      screen: DetailsScreen
     }
+  },
+  {
+    initialRouteName: 'Home',
+    navigationOptions: {
+      headerStyle: {
+        backgroundColor: '#F8C471'
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold'
+      }
+    }
+  }
 );
-  
+
 const RootStack = StackNavigator(
-    {
-      Main: {
-        screen: MainStack,
-      },
-      MyModal: {
-        screen: ModalScreen,
-      },
+  {
+    Main: {
+      screen: MainStack
     },
-    {
-      mode: 'modal',
-      headerMode: 'none',
+    MyModal: {
+      screen: ModalScreen
     }
+  },
+  {
+    mode: 'modal',
+    headerMode: 'none'
+  }
 );
-  
+
 const RootContainer = () => {
-    return <RootStack/>
-}
+  return <RootStack />;
+};
 
 export default RootContainer;

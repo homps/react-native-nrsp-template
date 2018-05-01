@@ -12,7 +12,7 @@ const persistConfig = {
   key: 'root',
   storage: FilesystemStorage,
   blacklist: ['remote'] // pick a part of the store that won't be persisted
-}
+};
 const persistedReducer = persistReducer(persistConfig, reducers);
 
 //saga for async http gets etc, this gets injected as middleware into redux
@@ -30,4 +30,4 @@ const persistor = persistStore(store);
 
 sagaMiddleware.run(rootSaga);
 
-export {store, persistor}
+export { store, persistor };

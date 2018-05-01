@@ -2,9 +2,9 @@ import { takeEvery, call, put } from 'redux-saga/effects';
 
 //the actions this saga can deal with
 import {
-    FETCH_URL,
-    FETCH_URL_RESULT,
-    FETCH_URL_ERROR,
+  FETCH_URL,
+  FETCH_URL_RESULT,
+  FETCH_URL_ERROR
 } from '../actions/remote';
 
 //a simple JS fetch
@@ -16,10 +16,10 @@ function* fetchUrl(action) {
     const response = yield call(fetchRaw, action.url);
 
     if (response.error) {
-        yield put({ type: FETCH_URL_ERROR, error: response.error });
+      yield put({ type: FETCH_URL_ERROR, error: response.error });
     } else {
-        const jsonText = yield response.json();
-        yield put({ type: FETCH_URL_RESULT, text: jsonText[0] });
+      const jsonText = yield response.json();
+      yield put({ type: FETCH_URL_RESULT, text: jsonText[0] });
     }
   } catch (error) {
     yield put({ type: FETCH_URL_ERROR, error: error.message });

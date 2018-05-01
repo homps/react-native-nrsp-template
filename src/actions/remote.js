@@ -9,5 +9,5 @@ export const FETCH_URL_ERROR = 'FETCH_URL_ERROR';
 
 export const fetchUrl = url => ({
   type: FETCH_URL,
-  url,
+  url
 });
